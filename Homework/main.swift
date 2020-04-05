@@ -90,4 +90,4 @@ class Address {
 }
 let address = Address(street: "131/75 ถนนพุทธมณฑล",
                       city: "นครปฐม")
-print("Address : \(address.street)\(address.city) จ.นครปฐม  รหัสไปรษณีย์ : 10180 ")
+print("Address : \(address.street) เมือง \(address.city) จ.นครปฐม  รหัสไปรษณีย์ : 10180 ")
