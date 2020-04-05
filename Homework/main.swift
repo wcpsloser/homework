@@ -49,4 +49,28 @@ print("Tshirt Size S : \(sizeS.size) Colour : \(sizeS.colour) Price : \(sizeS.pr
 print("Tshirt Size M : \(sizeM.size) Colour : \(sizeM.colour) Price : \(sizeM.price)")
 print("Tshirt Size L : \(sizeL.size) Colour : \(sizeL.colour) Price : \(sizeL.price)")
 
+class User {
+    var name: String
+    var email: String? = "Email"
+    var shoppingCart: String? = "shoppingCart"
+    
+    init(name: String,
+         email: String? = "Email",
+         shoppingCart: String? = "shoppingCart")
+    {
+        self.name = name
+        self.email = email
+        self.shoppingCart = shoppingCart
+        
+    }
+    var information: String
+    {
+        return "\(name) \(String(describing: email)) \(String(describing: shoppingCart))"
+    }
+}
+let profile = User(name: "Jame",
+                   email: "jame@gmail.com",
+                   shoppingCart: "Tshirt Size S,M,L")
+print("Name : \(profile.name) \nEmail : \(String(describing: profile.email)) \nShoppingCart : \(sizeS.size) \(sizeS.colour) , \(sizeM.size) \(sizeM.colour), \(sizeL.size) \(sizeL.colour) \nQuantity : 3")
+
 
