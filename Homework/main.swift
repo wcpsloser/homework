@@ -68,7 +68,7 @@ class User {
         return "\(name) \(String(describing: email)) \(String(describing: shoppingCart))"
     }
 }
-let profile = User(name: "Jame",
+let profile = User(name: "Jame Watson",
                    email: "jame@gmail.com",
                    shoppingCart: "Tshirt Size S,M,L")
 print("Name : \(profile.name) \nEmail : \(String(describing: profile.email)) \nShoppingCart : \(sizeS.size) \(sizeS.colour) , \(sizeM.size) \(sizeM.colour), \(sizeL.size) \(sizeL.colour) \nQuantity : 3")
@@ -91,3 +91,5 @@ class Address {
 let address = Address(street: "131/75 ถนนพุทธมณฑล",
                       city: "นครปฐม")
 print("Address : \(address.street) เมือง \(address.city) จ.นครปฐม  รหัสไปรษณีย์ : 10180 ")
+
+print("Detail : \(profile.name)\nEmail : \(String(describing: profile.email))\nAddress : \(address.street) เมือง \(address.city) จ.นครปฐม รหัสไปรษณีย์ : 10180 \nOrder : 3 ประกอบไปด้วย \n         Tshirt Size S : \(sizeS.size) Colour : \(sizeS.colour) Price : \(sizeS.price) \n         Tshirt Size M : \(sizeM.size) Colour : \(sizeM.colour) Price : \(sizeM.price)\n         Tshirt Size L : \(sizeL.size) Colour : \(sizeL.colour) Price : \(sizeL.price) รวมทั้งหมด 1875 Baht")
