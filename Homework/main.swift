@@ -73,4 +73,21 @@ let profile = User(name: "Jame",
                    shoppingCart: "Tshirt Size S,M,L")
 print("Name : \(profile.name) \nEmail : \(String(describing: profile.email)) \nShoppingCart : \(sizeS.size) \(sizeS.colour) , \(sizeM.size) \(sizeM.colour), \(sizeL.size) \(sizeL.colour) \nQuantity : 3")
 
-
+class Address {
+    var street: String
+    var city: String
+    
+    init(street: String,
+         city: String)
+    {
+        self.street = street
+        self.city = city
+    }
+    var address: String
+    {
+        return "\(street) \(city)"
+    }
+}
+let address = Address(street: "131/75 ถนนพุทธมณฑล",
+                      city: "นครปฐม")
+print("Address : \(address.street)\(address.city) จ.นครปฐม  รหัสไปรษณีย์ : 10180 ")
