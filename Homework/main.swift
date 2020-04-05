@@ -45,5 +45,8 @@ let sizeL = Tshirt(size: "L",
                    colour: "Red",
                    price: 500,
                    image: "Photo")
-print("Tshirt : \(sizeS.size) \(sizeS.colour) \(sizeS.price)")
+print("Tshirt Size S : \(sizeS.size) Colour : \(sizeS.colour) Price : \(sizeS.price)")
+print("Tshirt Size M : \(sizeM.size) Colour : \(sizeM.colour) Price : \(sizeM.price)")
+print("Tshirt Size L : \(sizeL.size) Colour : \(sizeL.colour) Price : \(sizeL.price)")
+
 
