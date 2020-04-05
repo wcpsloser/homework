@@ -43,6 +43,7 @@ let sizeM = Tshirt(size: "M",
 
 let sizeL = Tshirt(size: "L",
                    colour: "Red",
-                   price: 750,
+                   price: 500,
                    image: "Photo")
 print("Tshirt : \(sizeS.size) \(sizeS.colour) \(sizeS.price)")
+
